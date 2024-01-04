@@ -14,6 +14,16 @@
 // console.log([] == []) // false
 // console.log([] == ![]) // true
 
+// let arr1 = [1, 2, 3], arr2 = [4, 5, 6], arr3
+// arr3 = [...arr1, ...arr2]
+// console.log(arr3)
+
+// function sum(x, y, z) {
+//     return x + y + z;
+// }
+// const numbers = [1, 2, 3];
+// console.log(sum.apply(null, numbers));
+
 const valores = [7.7, 8.9, 6.3, 9.2]
 
 console.log(valores[0], valores[3])
