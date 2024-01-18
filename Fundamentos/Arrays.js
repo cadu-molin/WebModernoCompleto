@@ -26,6 +26,14 @@
 
 const valores = [7.7, 8.9, 6.3, 9.2]
 
+for (i in valores) {
+    console.log(i, valores[i])
+}
+
+console.log("")
+console.log(valores.length)
+console.log("")
+
 console.log(valores[0], valores[3])
 console.log(valores[4])
 console.log(valores)
