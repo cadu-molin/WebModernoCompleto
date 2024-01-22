@@ -15,6 +15,7 @@ console.log(soma(1, 2))
 console.log(soma(1, 2, 3))
 console.log(soma(1, 2, 3, 4))
 console.log(soma(1, 2, 3, 4, 5))
+
 //Bind 1
 
 console.log(soma(1, 2, 3, 4, 5, 6))
