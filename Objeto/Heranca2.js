@@ -44,3 +44,50 @@ console.log(volvo.status())
 
 ferrari.acelerarMais(300)
 console.log(ferrari.status())
+
+//Herança 4
+
+console.log("")
+
+for(let key in ferrari) {
+    ferrari.hasOwnProperty(key) ? console.log(key) : console.log(`Por herança: ${key}`)
+}
+
+console.log("")
+
+for(let key in volvo) {
+    volvo.hasOwnProperty(key) ? console.log(key) : console.log(`Por herança: ${key}`)
+}
+
+console.log("")
+
+//Herança 5
+
+String.prototype.reverse = function() {
+    return this.split('').reverse().join('')
+}
+
+console.log('Teste Herança'.reverse())
+
+console.log("")
+
+//Herança 6
+
+function Aula(nome, videoID){
+    this.nome = nome
+    this.videoID = videoID
+}
+
+const aula1 = new Aula("Bem Vindo", 123)
+
+function novo(f, ...parms) {
+    const obj = {}
+    
+    obj.__proto__ = f.prototype
+    f.apply(obj, parms)
+    
+    return obj
+}
+
+const aula2 = novo(Aula, 'Bem Vindo', 123)
+console.log(aula1, aula2)
