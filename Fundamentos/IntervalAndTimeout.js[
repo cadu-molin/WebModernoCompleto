@@ -1,0 +1,23 @@
+var dados = {}
+
+function carregarDados() {
+    setTimeout(function () {
+        dados.nome = 'Linguagem de Programacao '
+        dados.curso = ' Engenharia de Software '
+    }, 5000)
+    return dados
+}
+
+function processarDados(dados) {
+    console.log(" Dados recebidos: ", dados)
+}
+
+console.log(" Inicio do carregamento de dados ")
+
+processarDados(carregarDados())
+
+console.log(" Fim do script ")
+
+setInterval(function () {
+    console.log(dados)
+}, 1000)
